@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+		<h3 style="text-align: center;">Enter College Details</h3>
+	<form method="post"  action="RegisterServlet">
+	<table align="center" border="1px">
+        
+        <tr>
+			<th>College Id : </th>
+			<td>
+			<input type="number" id="cid" name="cid" maxlength="10" size="50" 
+			placeholder="College Id" required  autofocus/>
+			</td>
+        </tr>
+        
+        
+        <tr>
+			<th>College Name : </th>
+			<td>
+			<input type="text" id="cname" name="cname" maxlength="10" size="50" 
+			placeholder="College Name" required  autofocus/>
+			</td>
+		</tr>
+        
+        <tr>
+			<th>Course Type : </th>
+			<td>
+			<input type="checkbox" id="btech" name="btech"
+			checked value="btech" />B.E/B.Tech
+			<input type="checkbox" id="pharmacy" name="pharmacy"
+			value="pharmacy" />Pharmacy
+			<input type="checkbox" id="polytechnic" name="polytechnic"
+			value="polytechnic" />Polytechnic
+			<input type="checkbox" id="degree" name="degree"
+			value="degree" />Degree
+			</td>
+		</tr>
+
+        <tr>
+			<th>Select City : </th>
+			<td>
+			<select style="width:200px" id="ddlCity" name="ddlCity">
+			<option value="Select">--Select--</option>
+			<option selected value="Mumbai">Mumbai</option>
+			<option value="Pune">Pune</option>
+			<option value="Chennai">Chennai</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Bangalore">Bangalore</option>
+			</select>
+			</td>
+		</tr>
+
+        <tr>
+			<th>College Fees : </th>
+			<td>
+			<input type="number" id="fees" name="fees"
+			maxlength="8" size="10" required title="Please enter fees properly." placeholder="Fees" />
+			</td>
+		</tr>
+
+        <tr>
+			<th>Pincode : </th>
+			<td>
+			<input type="number" id="pin" name="pin"
+			maxlength="6" size="6" required title="Please enter pin properly." placeholder="Pincode" />
+			</td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center;">
+            <input type="submit" value="Register" />
+            </td>
+        </tr>
+
+		
+	</table>
+	</form>
+</body>
+</html>
